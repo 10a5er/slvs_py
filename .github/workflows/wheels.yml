@@ -26,7 +26,8 @@ jobs:
         uses: pypa/cibuildwheel@v2.23.0
         env:
           CIBW_SKIP: "*-macosx_* *-win32 *-win_amd64"
-          CIBW_BUILD: "cp314-manylinux_aarch64"
+          CIBW_BUILD: "cp314-manylinux_x86_64 cp314-manylinux_aarch64 cp314-win_amd64 cp314-macosx_x86_64 cp314-macosx_arm64
+"
           CIBW_ARCHS_LINUX: "aarch64"
 
       - uses: actions/upload-artifact@v4
