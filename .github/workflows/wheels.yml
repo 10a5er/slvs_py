@@ -42,7 +42,7 @@ jobs:
 
       # Build wheels
       - name: Build wheels
-        uses: pypa/cibuildwheel
+        uses: pypa/cibuildwheel@3.3.1
         env:
           CIBW_SKIP: pp*
           CIBW_BUILD: "cp314-manylinux_x86_64 cp314-manylinux_aarch64 cp314-win_amd64 cp314-macosx_x86_64 cp314-macosx_arm64"
